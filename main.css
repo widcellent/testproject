@@ -1,0 +1,13 @@
+.header {
+
+    font-weight: bold;
+    text-align: center;
+
+    padding: 50px;
+}
+
+.btn.btn-light {
+    
+    display: block;
+    margin : auto;
+}
