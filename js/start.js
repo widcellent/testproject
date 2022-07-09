@@ -5,7 +5,7 @@ const qna = document.querySelector("#qna");
 function addAnswer(answerText, number) {
     const a = document.querySelector(".answerBox");
     const answer = document.createElement('button');
-    answer.classList.add('answerList');
+    answer.classList.add('answerList','btn','btn-light');
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
@@ -28,7 +28,20 @@ function goNext(number) {
 }
 
 function begin() {
-    main.style.display = "none"; 
+    
+    
+    main.style.animation = 'fadeOut 1s';
+    qna.style.display ='none';
+    setTimeout(() => {
+        main.style.display = 'none';
+    }, 950);
+    setTimeout(() => {
+        qna.style.animation = 'fadeIn 1s';
+        setTimeout(() => {
+            qna.style.display = 'block';
+        }, 450);
+    }, 450);
+
     let number = 0;
      goNext(number);
 };

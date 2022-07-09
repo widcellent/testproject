@@ -6,8 +6,17 @@
     padding: 50px;
 }
 
-.btn.btn-light {
-    
-    display: block;
-    margin : auto;
+.qBox {
+    font-weight: bold;
+    padding: 20px;
 }
+
+.answerBox {
+    
+    padding: 30px;
+
+}
+.answerList {
+    margin-right: 70px;
+}
+
